@@ -13,26 +13,20 @@ class SplashScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              width: 98,
-              height: 82,
+              width: double.infinity,
+              height: double.infinity,
               margin: EdgeInsets.only(right: 16),
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(
-                    'splash.jpg',
+                    'assets/splash.jpg',
                     
                   ),
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
               ),
             ),
-            Text(
-              'Space',
-              style: whiteTextStyle.copyWith(
-                fontSize: 36,
-                fontWeight: bold,
-              ),
-            ),
+            
           ],
         ),
       ),

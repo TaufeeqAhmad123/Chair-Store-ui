@@ -1,4 +1,5 @@
-import 'package:chair_store/pages/splash/splash.dart';
+import 'package:chair_store/pages/home/home.dart';
+import 'package:chair_store/pages/home/profile/profile.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Chair store',
       
-      home: const SplashScreen(),
+      home: const HomeScreen(),
+      routes: {
+        '/home': (context) => const HomeScreen(),
+        '/wish': (context) => const HomeScreen(),
+        '/profile': (context) => const ProfileScreen(),
+        // Add other routes here
+      },
     );
   }
 }
