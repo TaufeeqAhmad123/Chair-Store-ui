@@ -19,9 +19,7 @@ class carouselWidget extends StatelessWidget {
         children: [
           Align(
             alignment: Alignment.bottomCenter,
-            child: Positioned(
-              right: 100,
-              child: Container(
+            child: Container(
                 
                 height: 210,
                 decoration: BoxDecoration(
@@ -58,7 +56,7 @@ class carouselWidget extends StatelessWidget {
                   ],
                 ),
               ),
-            ),
+            
           ),
           Padding(
             padding:  EdgeInsets.only(left: 20,top: 10),
